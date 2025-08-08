@@ -1,0 +1,148 @@
+[
+  {
+    "nodes": [
+      {
+        "identity": -109,
+        "labels": [
+          "__Document__"
+        ],
+        "properties": {
+          "name": "__Document__",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=5, name='document_id', type='NODE PROPERTY UNIQUENESS', schema=(:__Document__ {id}), ownedIndex=4 )"
+          ]
+        },
+        "elementId": "-109"
+      },
+      {
+        "identity": -111,
+        "labels": [
+          "__Entity__"
+        ],
+        "properties": {
+          "name": "__Entity__",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=9, name='entity_title', type='NODE PROPERTY UNIQUENESS', schema=(:__Entity__ {name}), ownedIndex=8 )"
+          ]
+        },
+        "elementId": "-111"
+      },
+      {
+        "identity": -110,
+        "labels": [
+          "__Community__"
+        ],
+        "properties": {
+          "name": "__Community__",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=7, name='entity_id', type='NODE PROPERTY UNIQUENESS', schema=(:__Community__ {community}), ownedIndex=6 )"
+          ]
+        },
+        "elementId": "-110"
+      },
+      {
+        "identity": -112,
+        "labels": [
+          "Finding"
+        ],
+        "properties": {
+          "name": "Finding",
+          "indexes": [
+
+          ],
+          "constraints": [
+
+          ]
+        },
+        "elementId": "-112"
+      },
+      {
+        "identity": -108,
+        "labels": [
+          "__Chunk__"
+        ],
+        "properties": {
+          "name": "__Chunk__",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=3, name='chunk_id', type='NODE PROPERTY UNIQUENESS', schema=(:__Chunk__ {id}), ownedIndex=2 )"
+          ]
+        },
+        "elementId": "-108"
+      }
+    ],
+    "relationships": [
+      {
+        "identity": -100,
+        "start": -111,
+        "end": -111,
+        "type": "RELATED",
+        "properties": {
+          "name": "RELATED"
+        },
+        "elementId": "-100",
+        "startNodeElementId": "-111",
+        "endNodeElementId": "-111"
+      },
+      {
+        "identity": -102,
+        "start": -108,
+        "end": -111,
+        "type": "HAS_ENTITY",
+        "properties": {
+          "name": "HAS_ENTITY"
+        },
+        "elementId": "-102",
+        "startNodeElementId": "-108",
+        "endNodeElementId": "-111"
+      },
+      {
+        "identity": -101,
+        "start": -108,
+        "end": -109,
+        "type": "PART_OF",
+        "properties": {
+          "name": "PART_OF"
+        },
+        "elementId": "-101",
+        "startNodeElementId": "-108",
+        "endNodeElementId": "-109"
+      },
+      {
+        "identity": -104,
+        "start": -111,
+        "end": -110,
+        "type": "IN_COMMUNITY",
+        "properties": {
+          "name": "IN_COMMUNITY"
+        },
+        "elementId": "-104",
+        "startNodeElementId": "-111",
+        "endNodeElementId": "-110"
+      },
+      {
+        "identity": -103,
+        "start": -110,
+        "end": -112,
+        "type": "HAS_FINDING",
+        "properties": {
+          "name": "HAS_FINDING"
+        },
+        "elementId": "-103",
+        "startNodeElementId": "-110",
+        "endNodeElementId": "-112"
+      }
+    ]
+  }
+]

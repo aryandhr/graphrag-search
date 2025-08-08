@@ -1,0 +1,18 @@
+{
+    "type": "function",
+    "tool_type": "unstructured",
+    "name": "run_cypher_query",
+    "description": "Execute a Cypher query against the Neo4j knowledge graph database. Use this to query the relationships between entities, documents, chunks, communities, and findings in the knowledge graph. The graph contains both structured and unstructured data that has been chunked, vectorized, and connected through relationships.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string", 
+                "description": "Cypher query to execute against the Neo4j database. Available node types: __Document__, __Entity__, __Community__, Finding, __Chunk__. Available relationships: RELATED, HAS_ENTITY, PART_OF, IN_COMMUNITY, HAS_FINDING."
+            }
+        },
+        "required": ["query"],
+        "additionalProperties": false
+    },
+    "strict": true
+} 

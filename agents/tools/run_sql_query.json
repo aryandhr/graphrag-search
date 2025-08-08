@@ -1,0 +1,15 @@
+{
+    "type": "function",
+    "tool_type": "structured",
+    "name": "run_sql_query",
+    "description": "Execute a SQL query against the database.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "query": {"type": "string", "description": "SQL query to execute"}
+        },
+        "required": ["query"],
+        "additionalProperties": false
+    },
+    "strict": true
+}

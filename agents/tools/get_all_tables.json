@@ -1,0 +1,15 @@
+{
+    "type": "function",
+    "tool_type": "structured",
+    "name": "get_all_tables",
+    "description": "List all tables in the public schema.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "table_name": {"type": "string", "description": "Name of the table"}
+        },
+        "required": ["table_name"],
+        "additionalProperties": false
+    },
+    "strict": true
+}

@@ -1,0 +1,24 @@
+{
+    "type": "function",
+    "tool_type": "unstructured",
+    "name": "global_search",
+    "description": "Perform global search across the entire knowledge base to generate comprehensive responses with key points and importance scores. Uses community-level data and reports to provide high-level insights and summaries from multiple data sources.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string", 
+                "description": "The search query or question to answer using global knowledge base data"
+            },
+            "response_type": {
+                "type": "string", 
+                "description": "Target response length and format",
+                "enum": ["Multiple Paragraphs", "Single Paragraph", "Single Sentence", "List of 3-7 Points", "Single Page", "Multi-Page Report"],
+                "default": "Multiple Paragraphs"
+            }
+        },
+        "required": ["query", "response_type"],
+        "additionalProperties": false
+    },
+    "strict": true
+}

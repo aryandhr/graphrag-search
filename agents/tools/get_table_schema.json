@@ -1,0 +1,15 @@
+{
+    "type": "function",
+    "tool_type": "structured",
+    "name": "get_table_schema",
+    "description": "Get the schema/columns for a specific table.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "table_name": {"type": "string", "description": "Name of the table to get schema for"}
+        },
+        "required": ["table_name"],
+        "additionalProperties": false
+    },
+    "strict": true
+}

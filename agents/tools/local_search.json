@@ -1,0 +1,24 @@
+{
+    "type": "function",
+    "tool_type": "unstructured",
+    "name": "local_search",
+    "description": "Perform local search to respond to questions about specific data in tables. Provides detailed responses with data references from local knowledge base tables, incorporating relevant information and citations.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string", 
+                "description": "The search query or question to answer using local data tables"
+            },
+            "response_type": {
+                "type": "string", 
+                "description": "Target response length and format",
+                "enum": ["Multiple Paragraphs", "Single Paragraph", "Single Sentence", "List of 3-7 Points", "Single Page", "Multi-Page Report"],
+                "default": "Multiple Paragraphs"
+            }
+        },
+        "required": ["query", "response_type"],
+        "additionalProperties": false
+    },
+    "strict": true
+}
