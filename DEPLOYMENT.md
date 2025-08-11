@@ -3,8 +3,6 @@
 ## Overview
 This guide explains how to deploy the GraphRAG Search application to Google Cloud Run with secure secret management using Google Secret Manager.
 
-## Quick Start (Recommended)
-
 ### Prerequisites
 1. **Google Cloud CLI installed**: https://cloud.google.com/sdk/docs/install
 2. **Google Cloud Project**: Create one at https://console.cloud.google.com
